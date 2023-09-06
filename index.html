@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+    <link rel="icon" href="images/Summer 1.png">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,9 +55,9 @@
     </header>
    <main>
         <!-- container -->
-        <div class="flex flex-col lg:flex-row mx-10 mt-6 gap-10 m-8">
+        <div class="flex flex-col lg:flex-row mx-10 mt-20 gap-10 m-8">
             <!--product container -->
-            <div class="flex-1">
+            <div class="flex-1 ">
                 <!-- row-1 -->
                 <div class="mt-20">
                     <h1 class="text-4xl font-semibold text-black">Kitchenware</h1>
@@ -171,17 +172,74 @@
                     </div>
                 </div>
                 </div>
+                <!-- row-3 -->
+                <div class="mt-12">
+                    <h1 class="text-4xl font-semibold text-black">Furnitures</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- product-7 -->
+                    <div  onclick="getClicked(this)" class="card bg-base-100 shadow-xl" id="product-7">
+                        <figure class="px-10 pt-10">
+                            <img src="images/prod7.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="rating items-center mt-10 mx-auto">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-2xl font-semibold">Single Relax Chair</h2>
+                            <p> <span>185</span>.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- product-8 -->
+                    <div  onclick="getClicked(this)" class="card bg-base-100 shadow-xl" id="product-8">
+                        <figure class="px-10 pt-10">
+                            <img src="images/prod8.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="rating items-center mt-10 mx-auto">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-2xl font-semibold">Children play</h2>
+                            <p> <span>299</span>.00 TK</p>
+                        </div>
+                    </div>
+                    <!-- product-9 -->
+                    <div  onclick="getClicked(this)" class="card bg-base-100 shadow-xl" id="product-9">
+                        <figure class="px-10 pt-10">
+                            <img src="images/prod9.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="rating items-center mt-10 mx-auto">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-2xl font-semibold">Flexible Sofa</h2>
+                            <p> <span>339</span>.00 TK</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
             <!-- purchase -->
             <div class="w-[342px] mt-28 md:mx-auto ">
-                <div class=" h-[148px] text-2xl font-medium bg-base-100 shadow-xl rounded-lg">
+                <div class=" h-[148px] text-2xl font-medium bg-base-100 shadow-xl rounded-lg sticky top-4">
                     <h1 class="text-2xl font-medium p-3 pt-4">Have a coupon?</h1>
                     <div class="join p-3">
                         <input class="input input-bordered join-item" id="coupon" placeholder="Coupon code"/>
                         <button id="apply" disabled class="btn btn-secondary join-item rounded-r-lg text-white">Apply</button>
                     </div>
                 </div>
-                <div class="mt-6 h-[416px] text-2xl font-medium bg-base-100 shadow-xl rounded-lg overflow-y-scroll">
+                <div class="mt-6 h-[416px] text-2xl font-medium bg-base-100 shadow-xl rounded-lg overflow-y-scroll sticky top-48">
                     <div class="p-3 text-left font-medium list-decimal" id="selected-Products">
                     
                     </div>
