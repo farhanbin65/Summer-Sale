@@ -11,7 +11,7 @@ document.getElementById('coupon').addEventListener('keyup', function(event){
 
 // go home
 document.getElementById('go-home').addEventListener('click', function(){
-    location.reload();
+    location.href = 'index.html';
 })
 
 
